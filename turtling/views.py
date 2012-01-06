@@ -3,7 +3,7 @@ from django.shortcuts import render_to_response
 
 from turtling.api import Japi
 
-def api(request, action):
+def api( request, action='' ):
 	japi = Japi( action )
 	return HttpResponse( japi, mimetype='application/json')
 

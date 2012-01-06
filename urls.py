@@ -5,9 +5,8 @@ from django.conf.urls.defaults import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('turtling.views',
-	(r'^$', 'index' ),
-	(r'^api/$', 'api'),
-	(r'^api/([a-zA-Z-]+)$', 'api'),
+	(r'^$', 'index' ), 
+	(r'^api/([a-zA-Z-]+)$', 'api')
     # Examples:
     # url(r'^$', 'turtled.views.home', name='home'),
     # url(r'^turtled/', include('turtled.foo.urls')),
